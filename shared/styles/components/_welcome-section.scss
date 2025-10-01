@@ -1,0 +1,42 @@
+@use '../helpers/index' as *;
+
+.welcome-section {
+  margin-top: -150px;
+  min-height: 110vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  &__wrapper {
+    position: absolute;
+    inset: 0;
+
+    background: url("/img/welcome-section3.jpg") center bottom / cover no-repeat;
+    transform: scale(1.02);
+    z-index: -2;
+    filter: blur(7px);
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+
+    &__logo {
+      width: 500px;
+      height: 500px;
+
+      g {
+        fill: var(--color-light) !important;
+      }
+    }
+
+    &__title {
+      font-size: 32px;
+      color: var(--color-light);
+    }
+  }
+}

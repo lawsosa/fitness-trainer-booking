@@ -1,0 +1,41 @@
+@use 'helpers/index' as *;
+
+body {
+    font-size: rem(16);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-nunito), sans-serif;
+    color: var(--color-dark);
+}
+
+a {
+    color: inherit;
+
+    &[class] {
+        text-decoration: none;
+    }
+}
+
+:focus-visible {
+    outline: rem(2) dashed var(--color-light);
+    outline-offset: rem(4);
+    transition-duration: 0s !important;
+}
+
+a,
+button {
+    &[aria-label] {
+        position: relative;
+    }
+}
+
+svg.lucide {
+    fill: none;
+}
+
+@include tablet {
+    .rellax {
+        transform: translate3d(0, 0, 0) !important;
+    }
+}

@@ -1,0 +1,7 @@
+export { Header } from './header'
+export { Container } from './container'
+export { Navbar } from './navbar'
+export { Footer } from './footer'
+export { WelcomeSection } from './welcome-section'
+export { AboutGym } from './about-gym'
+export { SliderAbout } from './slider-about'

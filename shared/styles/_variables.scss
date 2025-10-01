@@ -1,0 +1,36 @@
+@use 'helpers/index' as *;
+
+:root {
+  --color-lighter: #F2F1F1;
+  --color-light: #FFFFFF;
+  --color-darker: #EEEEEE;
+  --color-dark: #141414;
+
+  --color-dardaker-gray: #2D2D27;
+  --color-dark-gray: #4D4D4D;
+  --color-medium-gray: #B7B7B7;
+  --color-light-gray: #B8B8B8;
+  --color-lighter-gray: #D9D9D9;
+
+  --color-main-orange: #E95522;
+
+  --color-main-gray: rgb(77, 77, 77);
+  --color-main-gray-transparent: rgba(77, 77, 77, 0.8);
+  --color-main-gray-text-fields: rgba(238, 238, 238, 1);
+
+  --color-dark-darkerblue: #1e1e2f;
+  --color-main-darkblue: #1e2742;
+  --color-main-darkblue-transparent: rgba(30, 39, 66, 0.95);
+  --Color-dark-lightblue: #9AA8E2;
+
+  --color-main-div: #f1f1f1;
+
+  --transition-duration: 0.2s;
+  --transition-duration-fastest: 0.1s;
+
+  --container-padding-x: 16px;
+  --container-width: #{rem(1400)};
+  @include laptop {
+    --container-width: #{rem(1000)};
+  }
+}

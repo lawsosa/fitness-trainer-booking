@@ -1,0 +1,15 @@
+@use '../helpers/index' as *;
+
+.slider-about-embla {
+  //display: flex;
+  overflow: hidden;
+}
+
+.slider-award__img {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.embla-container {
+  display: flex;
+}

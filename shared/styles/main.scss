@@ -1,0 +1,20 @@
+@use 'normalize';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use 'ui/button';
+@use 'ui/dialog';
+@use 'ui/sheet';
+@use 'ui/carousel';
+
+//@use 'pages/not-found';
+
+@use 'components/header';
+@use 'components/navbar';
+@use 'components/burger-menu';
+@use 'components/header-buttons';
+@use 'components/footer';
+@use 'components/welcome-section';
+@use 'components/about-gym';
+@use 'components/slider-about';

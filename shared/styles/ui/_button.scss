@@ -1,0 +1,52 @@
+@use '../helpers/index' as *;
+
+.button-ui {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: rem(50);
+    padding: rem(12) rem(18);
+    background: transparent;
+    color: var(--color-light);
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--color-main-orange);
+    border-radius: 12px;
+    font-size: rem(16);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &__spin-loader {
+        animation: spin 2s linear infinite;
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    svg {
+        fill: none;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    @include hover {
+        background: var(--color-main-orange);
+        color: var(--color-light);
+    }
+}
+
+@keyframes animate-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,54 @@
+@use '../helpers/index' as *;
+
+.burger-button {
+  display: flex;
+  background: var(--color-medium-gray);
+  padding: 6px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &__svg {
+    display: block;
+  }
+
+  &__navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px !important;
+    font-size: rem(24);
+
+    &__title {
+      font-size: rem(32);
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+  }
+
+  @include hover {
+    border-color: transparent;
+  }
+
+  &__line {
+    fill: none;
+    stroke: var(--color-light);
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-dasharray: 60 207;
+    transition: stroke-dasharray var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--2 {
+      stroke-dasharray: 60 60;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  //&__social {
+  //  margin-top: auto;
+  //}
+}

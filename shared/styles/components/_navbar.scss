@@ -1,0 +1,36 @@
+@use '../helpers/index' as *;
+
+ul.header__pages__navbar {
+  display: flex;
+  gap: 50px;
+
+  li {
+    font-size: rem(25);
+    background: var(--color-);
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--color-dark-gray);
+      border-radius: 1px;
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    &:hover {
+      color: var(--color-dark-gray);
+
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@use '../helpers/index' as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(25) 0;
+
+  &__wrapper {
+    background: var(--color-lighter-gray);
+  }
+
+  &__logo {
+    display: flex;
+
+    &__title {
+      font-size: rem(40);
+      margin-left: rem(20);
+      align-items: center;
+    }
+  }
+
+  &__pages {
+    display: flex;
+
+  }
+
+  .hidden-tablet {
+    display: flex;
+    align-items: center;
+  }
+}

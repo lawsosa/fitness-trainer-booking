@@ -1,0 +1,31 @@
+@use '../helpers/index' as *;
+
+.header {
+
+  &__social {
+    width: 100%;
+    align-items: center;
+
+    &__icon {
+      width: rem(50);
+      height: rem(50);
+      fill: var(--color-dark);
+      transition: all var(--transition-duration-fastest) ease;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: rem(25);
+
+    &__profile {
+      align-items: center;
+
+      &__svg {
+        align-items: center;
+        width: rem(50);
+        height: rem(50);
+      }
+    }
+  }
+}
