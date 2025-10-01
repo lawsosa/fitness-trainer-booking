@@ -1,10 +1,10 @@
-import {AboutGym, WelcomeSection} from "@/shared/components";
+import { AboutGym, WelcomeSection } from '@/shared/components'
 
 export default function Home() {
-    return (
-        <>
-            <WelcomeSection/>
-            <AboutGym/>
-        </>
-    );
+	return (
+		<>
+			<WelcomeSection />
+			<AboutGym />
+		</>
+	)
 }
