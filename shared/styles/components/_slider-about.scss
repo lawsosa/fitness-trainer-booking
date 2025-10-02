@@ -1,15 +1,48 @@
 @use '../helpers/index' as *;
 
+.slider-about__wrapper {
+  width: 80%;
+}
+
+.slider-about {
+  position: relative;
+  display: flex;
+  margin: 0 2px;
+
+  &__img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+  }
+
+  &__progress-bar {
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e0e0e0;
+    overflow: hidden;
+
+    &__fill {
+      height: 100%;
+      background-color: #000;
+      transition: width 0.016s linear;
+    }
+  }
+}
+
 .slider-about-embla {
-  //display: flex;
+  width: 100%;
   overflow: hidden;
 }
 
-.slider-award__img {
-  flex: 0 0 100%;
-  min-width: 0;
+.embla__container {
+  display: flex;
 }
 
-.embla-container {
-  display: flex;
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
 }

@@ -73,15 +73,15 @@ export function SliderAbout() {
 							<div key={award.id} className='embla__slide'>
 								<div className='slider-about'>
 									<Image
-										className='slider-award__img'
+										className='slider-about__img'
 										src={`/img/${award.img}`}
 										alt={`Award ${award.id}`}
-										width={500}
-										height={500}
+										width={600}
+										height={600}
 									/>
-									<div className='slider-award__progress-bar'>
+									<div className='slider-about__progress-bar'>
 										<div
-											className='slider-award__progress-bar__fill'
+											className='slider-about__progress-bar__fill'
 											style={{ width: `${progress}%` }}
 										/>
 									</div>

@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import { SliderAbout } from '@/shared/components'
 import { Container } from '@/shared/components/shared/container'
 
