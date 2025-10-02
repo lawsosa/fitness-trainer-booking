@@ -1,5 +1,4 @@
 import { SliderAbout } from '@/shared/components'
-import { Container } from '@/shared/components/shared/container'
 
 const aboutGymList = [
 	[
@@ -34,54 +33,51 @@ const aboutGymList = [
 export function AboutGym() {
 	return (
 		<>
-			<Container>
-				<div className='about-gym'>
-					<div className='about-gym__hero'>
-						<div className='about-gym__content'>
-							<div className='about-gym__content__about'>
-								<h1 className='about-gym__content__about__title'>
-									В крации о стренажерном зале PrimeFit:
-								</h1>
-								<p className='about-gym__content__about__description'>
-									PrimeFit — современный фитнес-центр для тех,
-									кто ценит качество, комфорт и результат. У
-									нас просторные, светлые залы и новейшее
-									оборудование для всех видов тренировок.
-									Команда профессиональных тренеров поможет
-									подобрать индивидуальную программу и
-									поддержит на каждом этапе. Мы предлагаем
-									дружелюбную атмосферу, гибкие абонементы и
-									всё необходимое для эффективных и приятных
-									занятий спортом.
-								</p>
-							</div>
-							<SliderAbout />
+			<div className='about-gym'>
+				<div className='about-gym__hero'>
+					<div className='about-gym__content'>
+						<div className='about-gym__content__about'>
+							<h1 className='about-gym__content__about__title'>
+								В крации о стренажерном зале PrimeFit:
+							</h1>
+							<p className='about-gym__content__about__description'>
+								PrimeFit — современный фитнес-центр для тех, кто
+								ценит качество, комфорт и результат. У нас
+								просторные, светлые залы и новейшее оборудование
+								для всех видов тренировок. Команда
+								профессиональных тренеров поможет подобрать
+								индивидуальную программу и поддержит на каждом
+								этапе. Мы предлагаем дружелюбную атмосферу,
+								гибкие абонементы и всё необходимое для
+								эффективных и приятных занятий спортом.
+							</p>
 						</div>
-					</div>
-					<div className='about-gym__content__list'>
-						<h1 className='about-gym__content__list__title'>
-							Описание услуг:
-						</h1>
-						<ul>
-							{aboutGymList.map((arr, index) => (
-								<div
-									key={index}
-									className='about-gym__content__list__column'
-								>
-									{arr.map((item, index) => (
-										<div
-											key={index}
-											className='about-gym__content__list__item'
-										>
-											{item.text}
-										</div>
-									))}
-								</div>
-							))}
-						</ul>
+						<SliderAbout />
 					</div>
 				</div>
-			</Container>
+				<div className='about-gym__content__list'>
+					<h1 className='about-gym__content__list__title'>
+						Описание услуг:
+					</h1>
+					<ul>
+						{aboutGymList.map((arr, index) => (
+							<div
+								key={index}
+								className='about-gym__content__list__column'
+							>
+								{arr.map((item, index) => (
+									<div
+										key={index}
+										className='about-gym__content__list__item'
+									>
+										{item.text}
+									</div>
+								))}
+							</div>
+						))}
+					</ul>
+				</div>
+			</div>
 		</>
 	)
 }

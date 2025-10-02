@@ -179,8 +179,8 @@ svg * {
   --color-dardaker-gray: #2D2D27;
   --color-dark-gray: #4D4D4D;
   --color-medium-gray: #B7B7B7;
-  --color-light-gray: #B8B8B8;
   --color-lighter-gray: #D9D9D9;
+  --color-light-gray: #e7e7e7;
   --color-main-orange: #E95522;
   --color-main-gray: rgb(77, 77, 77);
   --color-main-gray-transparent: rgba(77, 77, 77, 0.8);
@@ -945,6 +945,21 @@ ul.header__pages__navbar li:hover {
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
+}
+
+.top-coaches {
+  background-color: var(--color-light-gray);
+}
+.top-coaches__content__title {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.about-coaches {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

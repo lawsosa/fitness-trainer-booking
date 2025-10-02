@@ -1,10 +1,14 @@
-import { AboutGym, WelcomeSection } from '@/shared/components'
+import { AboutGym, TopCoaches, WelcomeSection } from '@/shared/components'
+import { Container } from '@/shared/components/shared/container'
 
 export default function Home() {
 	return (
 		<>
 			<WelcomeSection />
-			<AboutGym />
+			<Container>
+				<AboutGym />
+			</Container>
+			<TopCoaches />
 		</>
 	)
 }
