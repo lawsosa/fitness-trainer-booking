@@ -37,6 +37,7 @@
     &__title {
       font-size: 32px;
       color: var(--color-light);
+      user-select: none;
     }
   }
 }

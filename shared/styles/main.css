@@ -178,9 +178,9 @@ svg * {
   --color-dark: #141414;
   --color-dardaker-gray: #2D2D27;
   --color-dark-gray: #4D4D4D;
-  --color-medium-gray: #B7B7B7;
-  --color-lighter-gray: #D9D9D9;
-  --color-light-gray: #e7e7e7;
+  --color-medium-gray: #D9D9D9;
+  --color-lighter-gray: #e1e1e1;
+  --color-light-gray: #eeeeee;
   --color-main-orange: #E95522;
   --color-main-gray: rgb(77, 77, 77);
   --color-main-gray-transparent: rgba(77, 77, 77, 0.8);
@@ -680,9 +680,13 @@ svg.lucide {
   justify-content: space-between;
   align-items: center;
   padding: 1.5625rem 0;
+  z-index: 20;
 }
 .header__wrapper {
-  background: var(--color-lighter-gray);
+  background: var(--color-medium-gray);
+  z-index: 10;
+  position: sticky;
+  top: 0;
 }
 .header__logo {
   display: flex;
@@ -802,7 +806,7 @@ ul.header__pages__navbar li:hover {
 }
 
 .footer {
-  background: var(--color-lighter-gray);
+  background: var(--color-medium-gray);
   padding: 20px;
 }
 .footer__content {
@@ -855,6 +859,7 @@ ul.header__pages__navbar li:hover {
 .welcome-section__content__title {
   font-size: 32px;
   color: var(--color-light);
+  user-select: none;
 }
 
 .about-gym {
@@ -949,17 +954,30 @@ ul.header__pages__navbar li:hover {
 
 .top-coaches {
   background-color: var(--color-light-gray);
+  margin-bottom: 50px;
 }
 .top-coaches__content__title {
   display: flex;
   justify-content: center;
   margin: 30px;
 }
+.top-coaches__content__button {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  background: var(--color-lighter-gray);
+  padding: 10px 25px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+}
+.top-coaches__content__button:hover {
+  background: var(--color-medium-gray);
+}
 
 .about-coaches {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=main.css.map */

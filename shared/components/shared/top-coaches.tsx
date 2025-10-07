@@ -61,6 +61,12 @@ export function TopCoaches() {
 								</div>
 							))}
 						</div>
+						<a
+							href='/coaches'
+							className='top-coaches__content__button'
+						>
+							Все тренера
+						</a>
 					</div>
 				</Container>
 			</div>
