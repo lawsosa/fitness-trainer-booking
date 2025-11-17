@@ -6,3 +6,6 @@ export { WelcomeSection } from './welcome-section'
 export { AboutGym } from './about-gym'
 export { SliderAbout } from './slider-about'
 export { TopCoaches } from './top-coaches'
+export { Coaches } from './coaches'
+export { CoachesList } from './coaches-list'
+export {}

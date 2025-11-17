@@ -17,6 +17,14 @@ a {
     }
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  font-size: rem(40)
+}
+
 :focus-visible {
     outline: rem(2) dashed var(--color-light);
     outline-offset: rem(4);

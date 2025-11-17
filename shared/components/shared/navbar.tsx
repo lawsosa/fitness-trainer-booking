@@ -1,4 +1,4 @@
-import { navLink } from '@/shared/components/shared/navigation'
+import { navLink } from '@/shared/assets/navigation'
 import { cn } from '@/shared/utils'
 
 interface Props {

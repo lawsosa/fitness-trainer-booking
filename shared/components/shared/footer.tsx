@@ -1,7 +1,7 @@
 import { Instagram, Twitter, Youtube } from 'lucide-react'
 
+import { navLink } from '@/shared/assets/navigation'
 import { Container } from '@/shared/components'
-import { navLink } from '@/shared/components/shared/navigation'
 
 const supportLinks = [
 	{ id: 1, label: 'FAQ', href: '/faq' },

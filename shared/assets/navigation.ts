@@ -6,12 +6,12 @@ export const navLink = [
 	},
 	{
 		id: 2,
-		name: 'Записаться',
-		link: 'appointment'
+		name: 'Тренеры',
+		link: 'coaches'
 	},
 	{
 		id: 3,
-		name: 'Тренеры',
-		link: 'coaches'
+		name: 'Записаться',
+		link: 'appointment'
 	}
 ]
